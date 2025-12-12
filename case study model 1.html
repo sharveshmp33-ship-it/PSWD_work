@@ -1,0 +1,246 @@
+<!-- NEW COMPLETE WEBSITE BASED ON YOUR REFERENCE (Healthy Lifestyle → Money/Bank Theme) -->
+<!-- This version includes: Banner, Image, Boxes, Lists, Table, Myth/Fact Cards, Feedback Form -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Money & Banking — Case Study</title>
+<style>
+body {
+  font-family: Arial;
+  background: url('https://via.placeholder.com/1400x900?text=Bank+Background+Image') no-repeat center center fixed;
+  background-size: cover;
+  margin:0;
+  padding:0;
+}
+
+/* HEADER BANNER */
+header {
+  background: linear-gradient(to right, #004aad, #1e90ff);
+  color:white;
+  text-align:center;
+  padding:50px 20px;
+  border-bottom-left-radius:60px;
+  border-bottom-right-radius:60px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.2);
+}
+header h1 { margin:0; font-size:38px; }
+header p { font-size:18px; margin-top:10px; }
+
+/* IMAGE BANNER */
+.image-banner img {
+  width:80%;
+  display:block;
+  margin:20px auto;
+  border-radius:20px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* GREEN CONTENT BOX */
+.box {
+  background:#e9faff;
+  border:2px solid #74c7ff;
+  padding:25px;
+  border-radius:12px;
+  width:80%;
+  margin:20px auto;
+}
+.box ul li {
+  padding:10px;
+  margin:6px 0;
+  transition:0.3s;
+}
+.box ul li:hover{
+  background:#c7ecff;
+  cursor:pointer;
+}
+
+/* TABLE */
+table{
+  width:80%;
+  margin:20px auto;
+  border-collapse:collapse;
+  box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+th,td{
+  border:1px solid #74c7ff;
+  padding:12px;
+  text-align:center;
+}
+th{
+  background:#c7e8ff;
+  font-size:18px;
+}
+
+/* MYTH FACT CARDS */
+.myth-fact{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+  gap:20px;
+  width:90%;
+  margin:20px auto;
+}
+.mf-card{
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0 3px 12px rgba(0,0,0,0.15);
+  border-left:6px solid;
+}
+.myth{border-left-color:#ff7043;}
+.fact{border-left-color:#2e7d32;}
+
+/* FEEDBACK FORM */
+form{
+  width:80%;
+  margin:20px auto;
+  background:#f1fbff;
+  border:2px solid #74c7ff;
+  padding:20px;
+  border-radius:12px;
+}
+input,textarea{
+  width:100%;
+  padding:12px;
+  border-radius:10px;
+  border:1px solid #74c7ff;
+  margin-top:10px;
+}
+button{
+  background:#004aad;
+  color:white;
+  padding:12px 20px;
+  border-radius:8px;
+  border:none;
+  margin-top:10px;
+  cursor:pointer;
+  transition:0.3s;
+}
+button:hover{transform:scale(1.05);}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Money & Banking — Case Study</h1>
+  <p>Understanding financial systems, savings, loans, and secure banking habits.</p>
+</header>
+
+<section class="image-banner">
+  <img src="https://via.placeholder.com/900x350?text=Banking+System+Banner" alt="Bank Image">
+</section>
+
+<section class="box">
+  <h2>Good Banking Habits</h2>
+  <ul>
+    <li>Maintain a minimum balance</li>
+    <li>Regularly check account statements</li>
+    <li>Use secure UPI and online banking</li>
+    <li>Save at least 20% of monthly income</li>
+    <li>Avoid unnecessary loans</li>
+  </ul>
+</section>
+
+<h2 style="text-align:center">Interest Rate Comparison</h2>
+<table>
+  <tr><th>Account Type</th><th>Interest Rate</th><th>Minimum Balance</th></tr>
+  <tr><td>Savings</td><td>4.5%</td><td>₹1000</td></tr>
+  <tr><td>Current</td><td>3.2%</td><td>₹5000</td></tr>
+  <tr><td>Fixed Deposit</td><td>7.8%</td><td>₹10,000</td></tr>
+</table>
+
+<h2 style="text-align:center;margin-top:40px;">Myths & Facts About Money</h2>
+<section class="myth-fact">
+  <div class="mf-card myth">
+    <h3>Myth: Credit cards are always dangerous.</h3>
+    <p>Fact: Credit cards are safe if bills are paid on time.</p>
+  </div>
+  <div class="mf-card fact">
+    <h3>Fact: Saving early increases wealth.</h3>
+    <p>Starting at 20 vs 30 doubles retirement savings.</p>
+  </div>
+  <div class="mf-card myth">
+    <h3>Myth: Only rich people invest.</h3>
+    <p>Anyone can start investing with as little as ₹100.</p>
+  </div>
+</section>
+
+<h2 style="text-align:center;margin-top:40px;">Feedback Form</h2>
+<form>
+  <label>Your Name</label>
+  <input type="text" placeholder="Enter your name">
+
+  <label>Your Message</label>
+  <textarea rows="5" placeholder="Write your feedback..."></textarea>
+
+  <button>Submit</button>
+</form>
+
+<!-- NEW BUTTONS SECTION -->
+<section style="width:80%;margin:30px auto;text-align:center;">
+  <h2>Quick Actions</h2>
+  <button style='padding:12px 20px;border:none;background:#1e90ff;color:white;border-radius:8px;margin:10px;cursor:pointer;'>Open Savings Account</button>
+  <button style='padding:12px 20px;border:none;background:#2e7d32;color:white;border-radius:8px;margin:10px;cursor:pointer;'>Apply for Loan</button>
+  <button style='padding:12px 20px;border:none;background:#ff7043;color:white;border-radius:8px;margin:10px;cursor:pointer;'>Check Interest Rates</button>
+</section>
+
+<!-- ICONS SECTION -->
+<section style="width:80%;margin:30px auto;display:flex;justify-content:space-around;text-align:center;">
+  <div>
+    <img src="https://cdn-icons-png.flaticon.com/512/2331/2331949.png" width="70"><p>Secure Banking</p>
+  </div>
+  <div>
+    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135706.png" width="70"><p>Customer Support</p>
+  </div>
+  <div>
+    <img src="https://cdn-icons-png.flaticon.com/512/1998/1998610.png" width="70"><p>Fast Payments</p>
+  </div>
+<section style="width:80%;margin:30px auto;text-align:center;">
+<h2>Banking Gallery</h2>
+
+<img src="https://images.unsplash.com/photo-1581092334573-7ca38a4f7d7f" 
+style="width:90%;border-radius:15px;margin:15px 0;" 
+alt="Online Banking">
+
+<img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3" 
+style="width:90%;border-radius:15px;margin:15px 0;" 
+alt="Digital Transactions">
+
+</section>
+<!-- USEFUL LINKS -->
+<section style="width:80%;margin:30px auto;">
+  <h2>Important Banking Links</h2>
+  <ul style='line-height:2;'>
+    <li><a href='https://www.rbi.org.in/'>RBI Official Website</a></li>
+    <li><a href='https://www.onlinesbi.sbi/'>SBI Net Banking</a></li>
+    <li><a href='https://www.hdfcbank.com/'>HDFC Bank</a></li>
+    <li><a href='https://www.icicibank.com/'>ICICI Bank</a></li>
+  </ul>
+</section>
+
+<!-- CHART SECTION -->
+<section style="width:80%;margin:40px auto;text-align:center;">
+  <h2>Savings Growth Chart (Demo)</h2>
+  <canvas id="chart1" width="600" height="300" style='background:white;border-radius:12px;box-shadow:0 3px 12px rgba(0,0,0,0.2);padding:10px;'></canvas>
+</section>
+
+<script>
+// Simple chart using HTML Canvas
+var c=document.getElementById('chart1');
+var ctx=c.getContext('2d');
+ctx.beginPath();ctx.moveTo(50,250);
+ctx.lineTo(150,200);
+ctx.lineTo(250,160);
+ctx.lineTo(350,120);
+ctx.lineTo(450,80);
+ctx.lineWidth=4;ctx.strokeStyle='#1e90ff';ctx.stroke();
+ctx.font='14px Arial';ctx.fillText('Year 1',40,270);
+ctx.fillText('Year 2',140,270);
+ctx.fillText('Year 3',240,270);
+ctx.fillText('Year 4',340,270);
+ctx.fillText('Year 5',440,270);
+ctx.fillText('Savings Growth →',220,40);
+</script>
+
+</body>
+</html>
